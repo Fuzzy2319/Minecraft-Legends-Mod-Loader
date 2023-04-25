@@ -2,16 +2,16 @@
 #include <windows.h>
 #include <stdlib.h>
 
-BOOL APIENTRY DllMain( 
+BOOL APIENTRY DllMain(
     HMODULE hModule,
     DWORD  ul_reason_for_call,
     LPVOID lpReserved
-)
-{
+) {
     switch (ul_reason_for_call)
     {
         case DLL_PROCESS_ATTACH:
-            system("calc");
+            MessageBox(NULL, TEXT("Test OK"), TEXT("Test"), MB_OK);
+
             break;
         case DLL_THREAD_ATTACH:
         case DLL_THREAD_DETACH:
@@ -20,4 +20,3 @@ BOOL APIENTRY DllMain(
     }
     return TRUE;
 }
-

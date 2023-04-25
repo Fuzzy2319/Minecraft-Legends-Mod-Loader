@@ -31,5 +31,5 @@
 *.out
 *.app
 
-# IDE Files
-/.vs/
+# Build Directory
+/build/
