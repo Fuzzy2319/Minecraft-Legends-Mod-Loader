@@ -4,7 +4,7 @@ all: clean build
 
 build:
 	mkdir -p ./build/
-	x86_64-w64-mingw32-gcc -shared -o ./build/XINPUT1_4.dll ./src/dllmain.cpp ./XInput1_4.def -s
+	g++ -municode -std=c++23 -static -Wall -O3 -shared -iquote ./include/ ./src/* ./XInput1_4.def -o ./build/XINPUT1_4.dll
 
 clean:
 	rm -rf ./build/ || true
