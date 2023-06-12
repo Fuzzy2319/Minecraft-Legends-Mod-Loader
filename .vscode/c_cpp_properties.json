@@ -10,7 +10,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:\\Users\\alexa\\Documents\\HackTools\\Mingw64\\bin\\gcc.exe",
+            "compilerPath": "D:/Users/alexa/Documents/HackTools/W64Devkit/bin/g++.exe",
             "cStandard": "c23",
             "cppStandard": "c++23",
             "intelliSenseMode": "windows-gcc-x64"

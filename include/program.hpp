@@ -1,4 +1,7 @@
+#pragma once
 #include <windows.h>
-#include <stdlib.h>
+#include "mlml/Logger.hpp"
 #include <filesystem>
-using std::filesystem::current_path;
+#include <stdlib.h>
+
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved);
